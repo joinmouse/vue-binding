@@ -14,7 +14,12 @@
       el: '#app',
       data: {
         message: ''
-     }
+      },
+      created () {
+        setInterval (() => {
+          console.log(this.message)
+        },1000)
+      }
     })
   </script>
 </body>
